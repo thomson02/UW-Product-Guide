@@ -1,0 +1,27 @@
+ [
+  {
+  "Name": "Manufacturer",
+  "Accessor": "Manufacturer",
+  "Value": "All"
+  },
+  {
+  "Name": "Model",
+  "Accessor": "Model",
+  "Value": "All"
+  },
+  {
+  "Name": "Platform",
+  "Accessor": "Platform",
+  "Value": "All"
+  },
+  {
+  "Name": "Frame",
+  "Accessor": "Frame",
+  "Value": "All"
+  },
+  {
+  "Name": "Mesh Count",
+  "Accessor": "Count",
+  "Value": "All"
+  }
+]

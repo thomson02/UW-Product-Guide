@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Barcode Reader Help</title>
+    <link href="bootstrap.min.css" rel="stylesheet"> 
+    <style>
+        div.col { width: 50% }
+        .sample { display: block; height: 96px; overflow: hidden; margin: 0px auto; padding: 0; background: url("zbar-samples.png") no-repeat; text-align: center}
+        .left { float: left }
+        .right { float: right }
+        p.cen { text-align: center }
+        .clear { clear: both }
+        .smaller { font-size: 85% }
+    </style>    
+        
+</head>
+<body>
+    <div style="border-bottom: 1px solid #EEE; padding-bottom: 5px; padding-top: 5px; margin-bottom: 10px;">
+        <h2 style="margin-left: 10px; margin-top: 4px; ">Barcode Reader Help</h2>
+    </div>
+    
+    <div style="margin-left: 10px; margin-right: 10px; margin-top: 5px;">
+        
+        <h3>Supported Barcodes</h3>
+        <div class="col left">
+            <a class="sample" style="width: 118px; background-position: -96px" href="http://wikipedia.org/wiki/EAN-13"></a>
+            <p class="cen"><a href="http://wikipedia.org/wiki/EAN-13">EAN/UPC<br/>Product Codes</a></p>
+        </div>
+        <div class="col right">
+            <a class="sample" style="width: 96px" href="http://wikipedia.org/wiki/QR_Code"></a>
+            <p class="cen"><a href="http://wikipedia.org/wiki/QR_Code">QR Codes</a></p>
+        </div>
+        <p class="clear cen smaller">Also recognized, but not shown:
+        <a href="http://wikipedia.org/wiki/Code_128">Code 128</a>,
+        <a href="http://wikipedia.org/wiki/DataBar">DataBar (RSS)</a>,
+        <a href="http://en.wikipedia.org/wiki/Code_93">Code 93</a>,
+        <a href="http://wikipedia.org/wiki/Code_39">Code 39</a> and
+        <a href="http://wikipedia.org/wiki/Interleaved_2_of_5">Interleaved 2 of 5</a>.</p>
+
+        <h3 class="clear" style="margin-top: 12px;">Scanning Tips</h3>
+        <ol>
+            <li><b>Light</b>: ensure there is plenty.</li>
+            <li><b>Distance</b>: should be about 3 to 5 inches.</li>
+            <li><b>Shake</b>: to force the camera to focus.</li>
+            <li><b>Wait</b>: for the autofocus to finish.</li>
+            <li><b>Hold Still</b>: while the barcode is scanned.</li>
+        </ol>
+        
+    </div>
+</body>
+</html>
+
