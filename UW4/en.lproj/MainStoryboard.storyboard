@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1934" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4pF-eM-TA7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="4pF-eM-TA7">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="931"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--Main Filter Controller - United Wire-->
         <scene sceneID="9AL-Z9-vlN">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wiu-0F-0ng" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="dXx-jy-WSL" customClass="MainFilterController" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="MainFilter" id="dXx-jy-WSL" customClass="MainFilterController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="Ane-m9-uki">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +30,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="12" contentMode="center" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" minimumFontSize="1" id="OZo-aL-wum">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="12" contentMode="center" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="1" adjustsFontSizeToFit="NO" id="OZo-aL-wum">
                                             <rect key="frame" x="234" y="13" width="36" height="18"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -47,7 +49,7 @@
                                 <rect key="frame" x="0.0" y="91" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="14" contentMode="center" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5ek-nj-cEU">
@@ -65,7 +67,7 @@
                                 <rect key="frame" x="0.0" y="135" width="320" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="10" y="1" width="300" height="43"/>
+                                    <rect key="frame" x="10" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="14" contentMode="center" text="dummySegue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mk9-6x-bsP">
@@ -103,10 +105,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="navbar" destination="5Kl-Kg-5qy" id="8ZQ-Zg-iZF"/>
+                    </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="400" y="41"/>
         </scene>
+        <!--List Filter Controller - [FilterName]-->
         <scene sceneID="R2n-ay-nZv">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="612-n5-dQH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -168,6 +174,7 @@
             </objects>
             <point key="canvasLocation" x="924" y="-216"/>
         </scene>
+        <!--Search Results Controller - Search Results-->
         <scene sceneID="4Qe-B1-QoW">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L6x-LI-aYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,6 +225,7 @@
             </objects>
             <point key="canvasLocation" x="850" y="620"/>
         </scene>
+        <!--Product Details Controller - Product Details-->
         <scene sceneID="DBb-ds-cGI">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gB4-eb-tgo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -748,6 +756,7 @@
             </objects>
             <point key="canvasLocation" x="1435" y="431"/>
         </scene>
+        <!--Navigation Controller-->
         <scene sceneID="eyY-cL-lgf">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YgG-xd-QcQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -771,6 +780,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MainFilterController.h"/>
             <relationships>
                 <relationship kind="action" name="resetButton:"/>
+                <relationship kind="outlet" name="navbar" candidateClass="UINavigationItem"/>
             </relationships>
         </class>
         <class className="ProductDetailsController" superclassName="UITableViewController">

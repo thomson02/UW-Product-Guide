@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PreferenceSpecifiers</key>
+	<array>
+		<dict>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Values</key>
+			<array>
+				<string>dataUWL</string>
+				<string>dataSWC</string>
+			</array>
+			<key>Titles</key>
+			<array>
+				<string>United Wire</string>
+				<string>SWWC</string>
+			</array>
+			<key>Title</key>
+			<string>Catalog</string>
+			<key>Key</key>
+			<string>cat</string>
+			<key>DefaultValue</key>
+			<string>dataUWL</string>
+		</dict>
+	</array>
+</dict>
+</plist>

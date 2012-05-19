@@ -12,6 +12,8 @@
 	<array>
 		<string>iphone4Icon.png</string>
 		<string>iphoneIcon.png</string>
+		<string>Default.png</string>
+		<string>Default@2x.png</string>
 	</array>
 	<key>CFBundleIcons</key>
 	<dict>
@@ -21,6 +23,8 @@
 			<array>
 				<string>iphone4Icon.png</string>
 				<string>iphoneIcon.png</string>
+				<string>Default.png</string>
+				<string>Default@2x.png</string>
 			</array>
 			<key>UIPrerenderedIcon</key>
 			<false/>

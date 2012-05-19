@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MainFilterController : UITableViewController
+@property (weak, nonatomic) IBOutlet UINavigationItem *navbar;
 - (IBAction)resetButton:(id)sender;
-
 @end

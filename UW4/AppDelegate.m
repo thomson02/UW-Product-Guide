@@ -8,14 +8,23 @@
 
 #import "AppDelegate.h"
 #import "Products.h"
+#import "MainFilterController.h"
 
 @implementation AppDelegate
 @synthesize window = _window;
+@synthesize dataSet = _dataSet;
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    // Set the application defaults
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableDictionary *appDefaults = [NSMutableDictionary dictionaryWithObject:@"dataUWL" forKey:@"cat"];
+    [defaults registerDefaults:appDefaults];
+    [defaults synchronize];
+    
+    _dataSet = [[NSUserDefaults standardUserDefaults] stringForKey:@"cat"];
     return YES;
 }
 							
@@ -40,7 +49,23 @@
     /*
      Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
      */
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSMutableDictionary *appDefaults = [NSMutableDictionary dictionaryWithObject:@"dataUWL" forKey:@"cat"];
+    [defaults registerDefaults:appDefaults];
+    [defaults synchronize];
+    
+    if ([[NSUserDefaults standardUserDefaults] stringForKey:@"cat"] != _dataSet){
+        _dataSet = [[NSUserDefaults standardUserDefaults] stringForKey:@"cat"]; 
+        
+        UINavigationController* navigationController = (UINavigationController*)  self.window.rootViewController;
+        [navigationController popToRootViewControllerAnimated:NO];               
+        [navigationController.visibleViewController viewDidLoad];
+        
+        //MainFilterController *mainFilter = [[MainFilterController alloc] init];
+        //[(UINavigationController *)self.window.rootViewController pushViewController:mainFilter animated:NO];
+    }
 }
+
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {

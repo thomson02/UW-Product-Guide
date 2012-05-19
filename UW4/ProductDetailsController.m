@@ -74,14 +74,14 @@
     orderPerBox.text = [product valueForKey:@"QuantityPerBox"];
     
     if (![[product valueForKey:@"Price2012"] isEqualToString:@"Unknown"]){
-        price2012.text = [@"£" stringByAppendingString:[product valueForKey:@"Price2012"]];
+        price2012.text = [product valueForKey:@"Price2012"];
     }
     else {
         price2012.text = [product valueForKey:@"Price2012"];
     }
     
     if (![[product valueForKey:@"Price2011"] isEqualToString:@"Unknown"]){
-        price2011.text = [@"£" stringByAppendingString:[product valueForKey:@"Price2011"]];
+        price2011.text = [product valueForKey:@"Price2011"];
     }
     else {
         price2011.text = [product valueForKey:@"Price2011"];
